@@ -1,9 +1,24 @@
 body {
-  background-color: #0799c4;
+  background-color: #0799c4; /* Vibrant blue to match the Ghibli signature blue */
   font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
   color: #17191c;
   margin: 0;
   text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #022631; /* A deep blue to complement the vibrant blue */
+  font-weight: bolder;
+}
+
+hr {
+  border: none;
+  background-color: #3c4048;
+  height: 1px;
+  margin: 10px 30px;
 }
 
 /* main container styling */
@@ -14,24 +29,19 @@ body {
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #b9eee9;
+  background-color: #9de5fb;
   border: none;
   border-radius: 16px;
-  padding: 15px;
+  /* rounded corners are used throughout the page to convey the friendly and welcoming nature of the page  */
+  /* padding: 15px; */
 }
 
-/* header image */
-.head-img {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 15px;
-}
-
-.head-img-caption {
-  text-align: right;
-  font-size: 12px;
-  font-style: italic;
+/* The Header styling */
+.title {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  color: #0799c4; /* Same Vibrant blue to match the background color of the body as the contrast to container background */
 }
 
 /* navigation styling */
@@ -39,18 +49,174 @@ body {
 .nav-list li {
   display: inline;
   list-style: none;
-  padding: 0 15px;
+  padding: 0 25px;
   font-weight: bold;
 }
 
-.nav-list li a {
+.nav-item a {
   text-decoration: none;
   color: #d8dadf;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #022631;
 }
 
 .nav-bar {
   margin-bottom: 20px;
   padding: 10px;
+  background-color: #0799c5;
+  /* border-radius: 15px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* header image */
+.head-img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 80px;
+}
+
+.head-img-caption {
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+}
+/* The opening Paragraph */
+.opening-p {
+  text-align: justify;
+  background-color: #fff5f1;
+  margin-bottom: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px 40px 10px 40px;
+  border-left: #0799c4 5px solid;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Styling of About Section */
+
+.about-sect {
+  text-align: justify;
+  background-color: #fff5f1;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 5px 20px 20% 20px;
+  border-right: #3accf8 5px solid;
+}
+
+/* Movie list style cards, a work in progress */
+.movie-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mv-card {
+  display: inline-block;
+  width: 650px;
+  height: 450px;
+  margin: 10px;
+  background-color: #d8dadf;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: #200f57 5px solid;
+  text-align: right;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.card-dtls li {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.card-dtls strong {
+  font-weight: 600;
+  margin-right: 4px;
+  text-transform: lowercase;
+}
+
+.mv-card a {
+  text-align: right;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #3accf8;
+  color: #022631;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 2px 12px;
+  /* margin: 8px; */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mv-card a:hover {
   background-color: #0799c4;
-  border-radius: 15px;
+  color: #d8dadf;
+}
+
+.movielist-sect {
+  background-color: #fff5f1;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 5px 20px 20% 20px;
+  border-left: #004c62 5px solid;
+}
+
+/* The notes section, this is where the main content is */
+
+.notes {
+  background-color: #fff5f1;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 5px 20px 20% 20px;
+  border-right: #0799c4 5px solid;
+}
+
+/* footer */
+
+.footer-container {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.footer-container a {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #c53307;
 }
