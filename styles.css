@@ -5,13 +5,20 @@ body {
   color: #17191c;
   margin: 0;
   text-align: center;
+  font-size: 1rem;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 10px;
   color: #022631; /* A deep blue to complement the vibrant blue */
   font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #022631;
+  font-weight: 900;
 }
 
 hr {
@@ -38,9 +45,9 @@ hr {
 
 /* The Header styling */
 .title {
-  font-size: 45px;
+  font-size: 2.5rem;
   margin-bottom: 15px;
-  font-weight: bolder;
+  font-weight: 900;
   color: #0799c4; /* Same Vibrant blue to match the background color of the body as the contrast to container background */
 }
 
@@ -147,8 +154,8 @@ ul {
 }
 
 .card-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 800;
   padding-left: 20px;
   text-align: left;
 }
@@ -175,7 +182,7 @@ ul {
   color: #022631;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  padding: 2px 12px;
+  padding: 0.5em 1em;
   /* margin: 8px; */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
