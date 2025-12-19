@@ -8,6 +8,16 @@ body {
   font-size: 1rem;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
