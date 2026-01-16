@@ -1,7 +1,6 @@
 body {
   background-color: #0799c4; /* Vibrant blue to match the Ghibli signature blue */
   font-family: "Segoe UI", sans-serif;
-  font-size: 16px;
   color: #17191c;
   margin: 0;
   text-align: center;
@@ -57,7 +56,7 @@ hr {
 .title {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  font-weight: 900;
+  font-weight: 700;
   color: #0799c4; /* Same Vibrant blue to match the background color of the body as the contrast to container background */
 }
 
@@ -77,7 +76,7 @@ hr {
 }
 
 .nav-item a:hover {
-  color: #022631;
+  color: #9de5fb;
 }
 
 .nav-bar {
@@ -91,18 +90,19 @@ hr {
 /* header image */
 .head-img {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 80px;
-  border-top-left-radius: 80px;
+  margin-bottom: 0.5rem;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
 }
 
 .head-img-caption {
   text-align: right;
   font-size: 12px;
   font-style: italic;
+  margin-right: 1.5rem;
 }
 /* The opening Paragraph */
 .opening-p {
@@ -130,8 +130,13 @@ hr {
   border-right: #3accf8 5px solid;
 }
 
-/* Movie list style cards, a work in progress */
+/* Movie list style cards, a work in progress
+ this whole sections needs to be reworked */
 .movie-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -143,8 +148,8 @@ ul {
 }
 
 .mv-card {
-  display: inline-block;
-  width: 650px;
+  /* display: inline-block; */
+  width: 450px;
   height: 450px;
   margin: 10px;
   background-color: #d8dadf;
